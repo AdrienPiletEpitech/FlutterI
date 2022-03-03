@@ -1,9 +1,13 @@
 import 'package:epitech_flutter/constant.dart';
 import 'package:epitech_flutter/routes.dart';
 import 'package:epitech_flutter/screens/splash/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 

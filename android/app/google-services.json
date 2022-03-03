@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "522733589981",
+    "project_id": "flutter-epitech-e457c",
+    "storage_bucket": "flutter-epitech-e457c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522733589981:android:5555e96b12d9672e455234",
+        "android_client_info": {
+          "package_name": "com.example.epitech_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522733589981-go8ee1rdngv5cktiivd49lrt2olbiq77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAErKQHu559JCLWI4_owv1JcvM7M4HuEB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522733589981-go8ee1rdngv5cktiivd49lrt2olbiq77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
