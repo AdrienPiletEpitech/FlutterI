@@ -1,4 +1,5 @@
 import 'package:epitech_flutter/constant.dart';
+import 'package:epitech_flutter/screens/sign_in/sign_in_screen.dart';
 import 'package:epitech_flutter/screens/splash/components/splash_content.dart';
 import 'package:flutter/material.dart';
 import 'package:epitech_flutter/size_config.dart';
@@ -63,7 +64,12 @@ class _BodyState extends State<Body> {
                         ),
                       ),
                       Spacer(),
-                      DefaultButton(),
+                      DefaultButton(
+                        text: 'Continue',
+                        press: () {
+                          Navigator.pushNamed(context, SignInScreen.routeName);
+                        },
+                      ),
                       Spacer(),
 
                     ],
