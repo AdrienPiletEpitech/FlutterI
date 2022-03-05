@@ -44,12 +44,10 @@ class _SignFormState extends State<SignForm> {
                 ),
               ],
             ),
-            DefaultButton(
-              text: "Continue",
-              press: () {
-                Navigator.pushNamed(context, HomePage.routeName);
-              },
-            ),
+            SizedBox(height: SizeConfig.screenHeight * 0.03),
+            DefaultButton(text: "Continue", press: () {
+              Navigator.pushNamed(context, HomePage.routeName);
+            }),
           ],
         ));
   }
