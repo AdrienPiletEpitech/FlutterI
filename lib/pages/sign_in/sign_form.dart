@@ -2,6 +2,7 @@ import 'package:epitech_flutter/constant.dart';
 import 'package:flutter/material.dart';
 import '../../components/default_button.dart';
 import '../../size_config.dart';
+import '../home/home.dart';
 
 class SignForm extends StatefulWidget {
   const SignForm({Key? key}) : super(key: key);
@@ -44,8 +45,11 @@ class _SignFormState extends State<SignForm> {
               ],
             ),
             DefaultButton(
-                text: "Continue",
-                press: () {}),
+              text: "Continue",
+              press: () {
+                Navigator.pushNamed(context, HomePage.routeName);
+              },
+            ),
           ],
         ));
   }
