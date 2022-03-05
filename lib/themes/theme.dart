@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:epitech_flutter/constant.dart';
+import 'package:flutter/services.dart';
 
 ThemeData theme() {
   return ThemeData(
@@ -21,8 +22,8 @@ AppBarTheme appBarTheme() {
   return const AppBarTheme(
     color: Colors.white,
     elevation: 0,
-    brightness: Brightness.light,
     iconTheme: IconThemeData(color: Colors.black),
     titleTextStyle: TextStyle(color: kPrimaryColor, fontSize: 20),
+    systemOverlayStyle: SystemUiOverlayStyle.light,
   );
 }

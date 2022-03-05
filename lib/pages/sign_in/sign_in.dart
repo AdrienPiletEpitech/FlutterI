@@ -1,4 +1,4 @@
-import 'package:epitech_flutter/screens/sign_in/components/body.dart';
+import 'package:epitech_flutter/pages/sign_in/components/body.dart';
 import 'package:flutter/material.dart';
 
 class SignInScreen extends StatelessWidget {

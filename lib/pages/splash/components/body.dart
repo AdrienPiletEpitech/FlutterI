@@ -1,6 +1,6 @@
 import 'package:epitech_flutter/constant.dart';
-import 'package:epitech_flutter/screens/sign_in/sign_in_screen.dart';
-import 'package:epitech_flutter/screens/splash/components/splash_content.dart';
+import 'package:epitech_flutter/pages/sign_in/sign_in.dart';
+import 'package:epitech_flutter/pages/splash/components/splash_content.dart';
 import 'package:flutter/material.dart';
 import 'package:epitech_flutter/size_config.dart';
 
