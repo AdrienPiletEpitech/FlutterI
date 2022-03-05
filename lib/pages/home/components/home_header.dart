@@ -1,4 +1,3 @@
-import 'package:epitech_flutter/pages/home/components/search_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
@@ -12,20 +11,17 @@ class HomeHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+      padding:
+          EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          SearchBar(),
-          IconBtnWithCounter(
-              icon: Icons.shopping_cart,
-              press: () {}
+          Text(
+            "Our products",
+            style: TextStyle(
+                fontSize: getProportionateScreenWidth(18), color: Colors.black),
           ),
-          IconBtnWithCounter(
-              icon: Icons.doorbell_outlined,
-              numOfItems: 3,
-              press: () {}
-          ),
+          IconBtnWithCounter(icon: Icons.shopping_cart, press: () {}),
         ],
       ),
     );
