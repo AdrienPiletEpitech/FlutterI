@@ -1,7 +1,9 @@
 import 'package:epitech_flutter/pages/sign_in/components/body.dart';
 import 'package:flutter/material.dart';
 
-class SignInScreen extends StatelessWidget {
+class SignInPage extends StatelessWidget {
+  const SignInPage({Key? key}) : super(key: key);
+
   static String routeName = '/sign_in';
 
   @override
