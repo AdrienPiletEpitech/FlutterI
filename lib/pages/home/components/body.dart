@@ -1,6 +1,8 @@
 import 'package:epitech_flutter/size_config.dart';
 import 'package:flutter/material.dart';
 
+import 'home_header.dart';
+
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
 
@@ -9,8 +11,8 @@ class Body extends StatelessWidget {
     return SafeArea(child: SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(height: getProportionateScreenWidth(20))
-          HomeHeader(),
+          SizedBox(height: getProportionateScreenWidth(20)),
+          const HomeHeader(),
         ],
       ),
     ));
