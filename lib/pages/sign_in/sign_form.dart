@@ -46,9 +46,11 @@ class _SignFormState extends State<SignForm> {
               ],
             ),
             SizedBox(height: SizeConfig.screenHeight * 0.03),
-            DefaultButton(text: "Continue", press: () {
-              Navigator.pushNamed(context, ProfilePage.routeName);
-            }),
+            DefaultButton(
+                text: "Continue",
+                press: () {
+                  Navigator.pushNamed(context, ProfilePage.routeName);
+                }),
           ],
         ));
   }
