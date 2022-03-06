@@ -1,5 +1,7 @@
+import 'package:epitech_flutter/constant.dart';
 import 'package:flutter/material.dart';
 
+import '../../components/bottomNavigationBar.dart';
 import 'components/body.dart';
 
 class HomePage extends StatelessWidget {
@@ -8,8 +10,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Body(),
+    return Scaffold(
+      body: const Body(),
+      bottomNavigationBar: buildBottomNavigationBar(0, context),
     );
   }
 }

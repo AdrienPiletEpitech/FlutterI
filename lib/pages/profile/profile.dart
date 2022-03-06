@@ -2,7 +2,7 @@ import 'package:epitech_flutter/utils/user_preferences.dart';
 import 'package:flutter/material.dart';
 
 import '../../models/user.dart';
-import '../../widget/appbar_widget.dart';
+import '../../components/appbar.dart';
 import '../../widget/numbers_widget.dart';
 import '../../widget/profile_widget.dart';
 
