@@ -1,4 +1,5 @@
 import 'package:epitech_flutter/constant.dart';
+import 'package:epitech_flutter/pages/register/register.dart';
 import 'package:epitech_flutter/size_config.dart';
 import 'package:flutter/material.dart';
 import '../../../widget/socialMediaIcons_widget.dart';
@@ -52,29 +53,29 @@ class Body extends StatelessWidget {
 
   Row registerTextRow(BuildContext context) {
     return Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "New here ? ",
-                style: TextStyle(fontSize: getProportionateScreenWidth(16)),
-              ),
-              Text(
-                "Create an account ",
-                style: TextStyle(fontSize: getProportionateScreenWidth(16)),
-              ),
-              InkWell(
-                // onTap: () {
-                //  Navigator.pushNamed(context, "");
-                //},
-                child: Text(
-                  "here",
-                  style: TextStyle(
-                      fontSize: getProportionateScreenWidth(16),
-                      color: kPrimaryColor,
-                      decoration: TextDecoration.underline),
-                ),
-              ),
-            ],
-          );
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          "New here ? ",
+          style: TextStyle(fontSize: getProportionateScreenWidth(16)),
+        ),
+        Text(
+          "Create an account ",
+          style: TextStyle(fontSize: getProportionateScreenWidth(16)),
+        ),
+        GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, RegisterPage.routeName);
+          },
+          child: Text(
+            "here",
+            style: TextStyle(
+                fontSize: getProportionateScreenWidth(16),
+                color: kPrimaryColor,
+                decoration: TextDecoration.underline),
+          ),
+        ),
+      ],
+    );
   }
 }
