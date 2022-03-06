@@ -1,6 +1,7 @@
 import 'package:epitech_flutter/utils/user_preferences.dart';
 import 'package:flutter/material.dart';
 
+import '../../components/bottomNavigationBar.dart';
 import '../../models/user.dart';
 import '../../components/appbar.dart';
 import '../../widget/numbers_widget.dart';
@@ -32,6 +33,7 @@ class ProfilePage extends StatelessWidget {
           buildAbout(user),
         ],
       ),
+      bottomNavigationBar: buildBottomNavigationBar(0, context),
     );
   }
 
