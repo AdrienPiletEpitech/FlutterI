@@ -27,7 +27,26 @@ class _RegisterFormState extends State<RegisterForm> {
             buildPasswordFormField(),
             SizedBox(height: getProportionateScreenHeight(20.0)),
             buildRepeatPasswordFormField(),
-            SizedBox(height: getProportionateScreenHeight(30.0)),
+            Row(
+              children: [
+                Checkbox(
+                  value: remember,
+                  activeColor: kPrimaryColor,
+                  onChanged: (value) {
+                    setState(() {
+                      remember = value!;
+                    });
+                  },
+                ),
+                const Text("Agree Terms"),
+                const Spacer(),
+                const Text(
+                  "Terms",
+                  style: TextStyle(decoration: TextDecoration.underline),
+                ),
+              ],
+            ),
+            SizedBox(height: getProportionateScreenHeight(20.0)),
             DefaultButton(
                 text: "Continue",
                 press: () {
