@@ -19,8 +19,8 @@ class Body extends StatelessWidget {
           const HomeHeader(),
           SizedBox(height: getProportionateScreenWidth(30)),
           Wrap(
-            spacing: 10,
-            runSpacing: 20,
+            spacing: 25,
+            runSpacing: 25,
             children: [
               ...List.generate(
                   products.length,

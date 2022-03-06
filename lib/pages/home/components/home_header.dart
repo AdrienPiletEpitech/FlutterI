@@ -1,3 +1,4 @@
+import 'package:epitech_flutter/pages/profile/profile.dart';
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
@@ -21,7 +22,13 @@ class HomeHeader extends StatelessWidget {
             style: TextStyle(
                 fontSize: getProportionateScreenWidth(18), color: Colors.black),
           ),
-          IconBtnWithCounter(icon: Icons.shopping_cart, press: () {}),
+          Row(
+            children: [
+              IconBtnWithCounter(icon: Icons.shopping_cart, press: () {}),
+              SizedBox(width: getProportionateScreenWidth(10)),
+              IconBtnWithCounter(icon: Icons.supervised_user_circle, press: () => Navigator.pushNamed(context, ProfilePage.routeName)),
+            ],
+          ),
         ],
       ),
     );
