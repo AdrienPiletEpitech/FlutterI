@@ -10,8 +10,8 @@ AppBar buildAppBar(BuildContext context) {
     elevation: 0,
     actions: [
       IconButton(
-          icon: const Icon(icon),
-          onPressed: () {},
+        icon: const Icon(icon),
+        onPressed: () {},
       ),
     ],
   );

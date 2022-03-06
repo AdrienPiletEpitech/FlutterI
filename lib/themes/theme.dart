@@ -13,8 +13,8 @@ ThemeData theme() {
 
 TextTheme textTheme() {
   return const TextTheme(
-      bodyText1: TextStyle(color: kTextColor),
-      bodyText2: TextStyle(color: kTextColor),
+    bodyText1: TextStyle(color: kTextColor),
+    bodyText2: TextStyle(color: kTextColor),
   );
 }
 

@@ -1,4 +1,3 @@
-import 'package:epitech_flutter/constant.dart';
 import 'package:epitech_flutter/routes.dart';
 import 'package:epitech_flutter/pages/splash/splash.dart';
 import 'package:epitech_flutter/themes/theme.dart';

@@ -1,5 +1,4 @@
 import 'package:epitech_flutter/components/default_button.dart';
-import 'package:epitech_flutter/constant.dart';
 import 'package:epitech_flutter/size_config.dart';
 import 'package:flutter/material.dart';
 
@@ -39,7 +38,6 @@ class Body extends StatelessWidget {
                   right: SizeConfig.screenWidth * 0.15,
                 ),
                 child: DefaultButton(text: "Add to Cart", press: () {})),
-
           ]),
         )
       ],

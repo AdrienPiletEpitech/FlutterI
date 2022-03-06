@@ -18,14 +18,11 @@ class ProductDescription extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: getProportionateScreenWidth(20)),
+          padding:
+              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
           child: Text(
             product.title,
-            style: Theme
-                .of(context)
-                .textTheme
-                .headline6,
+            style: Theme.of(context).textTheme.headline6,
           ),
         ),
         SizedBox(height: getProportionateScreenWidth(30)),
@@ -53,7 +50,11 @@ class ProductDescription extends StatelessWidget {
                   style: TextStyle(
                       color: kPrimaryColor, fontWeight: FontWeight.w600),
                 ),
-                Icon(Icons.arrow_forward, size: 12, color: kPrimaryColor,)
+                Icon(
+                  Icons.arrow_forward,
+                  size: 12,
+                  color: kPrimaryColor,
+                )
               ],
             ),
           ),

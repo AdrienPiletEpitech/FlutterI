@@ -1,4 +1,3 @@
-import 'package:epitech_flutter/constant.dart';
 import 'package:epitech_flutter/models/products.dart';
 import 'package:epitech_flutter/pages/product_details/product_details.dart';
 import 'package:epitech_flutter/size_config.dart';
@@ -28,7 +27,9 @@ class Body extends StatelessWidget {
                   (index) => ProductCard(
                         product: products[index],
                         press: () => Navigator.pushNamed(
-                            context, ProductDetails.routeName, arguments: ProductDetailsArguments(product: products[index])),
+                            context, ProductDetails.routeName,
+                            arguments: ProductDetailsArguments(
+                                product: products[index])),
                       ))
             ],
           ),

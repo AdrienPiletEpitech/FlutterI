@@ -36,35 +36,32 @@ class ProfilePage extends StatelessWidget {
   }
 
   Widget buildAbout(User user) => Container(
-      padding: EdgeInsets.symmetric(horizontal: 48),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text(
-            'About',
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)
-          ),
-          const SizedBox(height: 16),
-          Text(
-            user.about,
-            style: const TextStyle(fontSize: 16, height: 1.4),
-          )
-        ],
-      ),
-  );
+        padding: const EdgeInsets.symmetric(horizontal: 48),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text('About',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 16),
+            Text(
+              user.about,
+              style: const TextStyle(fontSize: 16, height: 1.4),
+            )
+          ],
+        ),
+      );
 
   Widget buildName(User user) => Column(
-    children: [
-      Text(
-        user.name,
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
-      ),
-      const SizedBox(height: 4),
-      Text(
-        user.email,
-        style: TextStyle(color: Colors.grey),
-      )
-    ],
-  );
+        children: [
+          Text(
+            user.name,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            user.email,
+            style: const TextStyle(color: Colors.grey),
+          )
+        ],
+      );
 }
-

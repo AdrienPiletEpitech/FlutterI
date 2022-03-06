@@ -18,7 +18,7 @@ class SocialWidget extends StatelessWidget {
       onTap: press,
       child: Container(
         margin:
-        EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(10)),
+            EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(10)),
         padding: EdgeInsets.all(getProportionateScreenWidth(12.0)),
         height: getProportionateScreenHeight(50.0),
         width: getProportionateScreenWidth(50.0),

@@ -3,14 +3,12 @@ import 'package:flutter/material.dart';
 class NumbersWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Row(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: <Widget>[
-      buildButton(context, "4", 'Wallet'),
-      buildButton(context, "5", 'Cart'),
-    ],
-  );
-
-
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          buildButton(context, "4", 'Wallet'),
+          buildButton(context, "5", 'Cart'),
+        ],
+      );
 
   Widget buildButton(BuildContext context, String value, String text) {
     return MaterialButton(
@@ -18,7 +16,7 @@ class NumbersWidget extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.start,
-        children: <Widget> [
+        children: <Widget>[
           Text(
             value,
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),

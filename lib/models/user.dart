@@ -15,5 +15,5 @@ class User {
     required this.isDarkMode,
     required this.balance,
     required this.inCart,
-});
+  });
 }
