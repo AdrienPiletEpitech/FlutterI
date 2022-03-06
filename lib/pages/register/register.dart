@@ -1,3 +1,4 @@
+import 'package:epitech_flutter/pages/register/components/body.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -10,7 +11,7 @@ class RegisterPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Register"),
       ),
-
+      body: const Body(),
     );
   }
 }
