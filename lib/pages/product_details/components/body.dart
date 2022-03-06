@@ -30,8 +30,17 @@ class Body extends StatelessWidget {
           ],
         ),
         TopRoundedContainer(
-          child: Column(children: [ProductDescription(product: product),
-          DefaultButton(text: "Add to Cart", press: () {})]),
+          child: Column(children: [
+            ProductDescription(product: product),
+            SizedBox(height: getProportionateScreenWidth(30)),
+            Padding(
+                padding: EdgeInsets.only(
+                  left: SizeConfig.screenWidth * 0.15,
+                  right: SizeConfig.screenWidth * 0.15,
+                ),
+                child: DefaultButton(text: "Add to Cart", press: () {})),
+
+          ]),
         )
       ],
     );

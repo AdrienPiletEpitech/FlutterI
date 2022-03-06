@@ -57,8 +57,7 @@ class ProductDescription extends StatelessWidget {
               ],
             ),
           ),
-        ),
-        SizedBox(height: getProportionateScreenWidth(20)),
+        )
       ],
     );
   }
