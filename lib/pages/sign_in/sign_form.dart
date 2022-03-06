@@ -1,4 +1,5 @@
 import 'package:epitech_flutter/constant.dart';
+import 'package:epitech_flutter/pages/profile/profile.dart';
 import 'package:flutter/material.dart';
 import '../../components/default_button.dart';
 import '../../size_config.dart';
@@ -46,7 +47,7 @@ class _SignFormState extends State<SignForm> {
             ),
             SizedBox(height: SizeConfig.screenHeight * 0.03),
             DefaultButton(text: "Continue", press: () {
-              Navigator.pushNamed(context, HomePage.routeName);
+              Navigator.pushNamed(context, ProfilePage.routeName);
             }),
           ],
         ));
