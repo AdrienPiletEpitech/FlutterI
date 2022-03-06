@@ -28,10 +28,30 @@ class ProfilePage extends StatelessWidget {
           buildName(user),
           const SizedBox(height: 24),
           NumbersWidget(),
+          const SizedBox(height: 48),
+          buildAbout(user),
         ],
       ),
     );
   }
+
+  Widget buildAbout(User user) => Container(
+      padding: EdgeInsets.symmetric(horizontal: 48),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'About',
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)
+          ),
+          const SizedBox(height: 16),
+          Text(
+            user.about,
+            style: const TextStyle(fontSize: 16, height: 1.4),
+          )
+        ],
+      ),
+  );
 
   Widget buildName(User user) => Column(
     children: [
