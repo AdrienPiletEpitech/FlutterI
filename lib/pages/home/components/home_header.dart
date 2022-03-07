@@ -2,6 +2,7 @@ import 'package:epitech_flutter/pages/profile/profile.dart';
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
+import '../../shop/shop.dart';
 import 'icon_btn_with_counter.dart';
 
 class HomeHeader extends StatelessWidget {
@@ -24,7 +25,7 @@ class HomeHeader extends StatelessWidget {
           ),
           Row(
             children: [
-              IconBtnWithCounter(icon: Icons.shopping_cart, press: () {}),
+              IconBtnWithCounter(icon: Icons.shopping_cart, press: () => Navigator.pushNamed(context, ShopPage.routeName)),
               SizedBox(width: getProportionateScreenWidth(10)),
               IconBtnWithCounter(icon: Icons.supervised_user_circle, press: () => Navigator.pushNamed(context, ProfilePage.routeName)),
             ],
