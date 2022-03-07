@@ -11,7 +11,7 @@ class ShopPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Shop"),
+        title: const Text("Shopping cart"),
       ),
       body: const Body(),
       bottomNavigationBar: buildBottomNavigationBar(2, context),

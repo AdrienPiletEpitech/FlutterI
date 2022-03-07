@@ -1,3 +1,4 @@
+import 'package:epitech_flutter/components/default_button.dart';
 import 'package:epitech_flutter/pages/shop/components/productCard.dart';
 import 'package:epitech_flutter/size_config.dart';
 import 'package:flutter/material.dart';
@@ -29,6 +30,7 @@ class Body extends StatelessWidget {
                         ],
                       ),
                       SizedBox(height: getProportionateScreenWidth(30)),
+                      DefaultButton(text: "Pay", press: () {}),
                     ],
                   ),
                 ),

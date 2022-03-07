@@ -21,7 +21,7 @@ BottomNavigationBar buildBottomNavigationBar(index, context) {
           backgroundColor: appColor),
       BottomNavigationBarItem(
           icon: Icon(Icons.shopping_cart),
-          label: "Shop",
+          label: "Cart",
           backgroundColor: appColor),
       BottomNavigationBarItem(
           icon: Icon(Icons.logout),
