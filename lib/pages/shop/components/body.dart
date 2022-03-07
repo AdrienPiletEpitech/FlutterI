@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import '../../../models/products.dart';
 import '../../../widget/socialMediaIcons_widget.dart';
 import '../../product_details/product_details.dart';
-import 'headerShop.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
