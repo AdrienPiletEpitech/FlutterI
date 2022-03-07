@@ -3,6 +3,7 @@ import 'package:epitech_flutter/pages/profile/profile.dart';
 import 'package:flutter/material.dart';
 
 import '../constant.dart';
+import '../pages/shop/shop.dart';
 import '../pages/sign_in/sign_in.dart';
 
 BottomNavigationBar buildBottomNavigationBar(index, context) {
@@ -36,7 +37,7 @@ BottomNavigationBar buildBottomNavigationBar(index, context) {
           Navigator.pushNamed(context, ProfilePage.routeName);
           break;
         case 2:
-          Navigator.pushNamed(context, ProfilePage.routeName);
+          Navigator.pushNamed(context, ShopPage.routeName);
           break;
         case 3:
           Navigator.pushNamed(context, SignInPage.routeName);
