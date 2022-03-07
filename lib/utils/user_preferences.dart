@@ -1,7 +1,7 @@
 import '../models/user.dart';
 
 class UserPreferences {
-  static const myUser = User(
+  static var myUser = User(
     imagePath: "https://www.w3schools.com/w3images/avatar6.png",
     name: "Adrien",
     email: "Adrien.Adrien@Adrien.com",
