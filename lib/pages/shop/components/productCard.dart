@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../constant.dart';
 import '../../../models/products.dart';
-import '../../../size_config.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
@@ -27,7 +25,7 @@ class ProductCard extends StatelessWidget {
           title: Text(product.title),
           subtitle:  Text("\$${product.price}"),
           trailing: IconButton(icon: Icon(
-            Icons.add_shopping_cart,
+            Icons.delete,
             size: 20.0,
             color: Colors.brown[900],
           ),
