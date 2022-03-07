@@ -13,16 +13,6 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
             child: SingleChildScrollView(
-                child: Container(
-                  decoration: const BoxDecoration(
-                    border: Border(
-                      top: BorderSide(width: 1.0, color: Color(0xFFDFDFDF)),
-                      left: BorderSide(width: 1.0, color: Color(0xFFDFDFDF)),
-                      right: BorderSide(width: 1.0, color: Color(0xFF7F7F7F)),
-                      bottom: BorderSide(width: 1.0, color: Color(0xFF7F7F7F)),
-                    ),
-                    color: Color(0xFFBFBFBF),
-                  ),
                   child: Column(
                     children: [
                       Wrap(
@@ -43,7 +33,6 @@ class Body extends StatelessWidget {
                     ],
                   ),
                 ),
-              ),
-            );
+              );
   }
 }
