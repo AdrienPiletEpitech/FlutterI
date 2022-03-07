@@ -36,7 +36,7 @@ class ProductCard extends StatelessWidget {
                   style: TextStyle(
                       fontSize: getProportionateScreenWidth(18),
                       fontWeight: FontWeight.w600,
-                      color: kPrimaryColor),
+                      color: appColor),
                 ),
                 IconButton( icon: Icon(Icons.add_shopping_cart),
                   onPressed: () {

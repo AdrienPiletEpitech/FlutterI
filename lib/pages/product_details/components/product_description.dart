@@ -48,12 +48,12 @@ class ProductDescription extends StatelessWidget {
                 Text(
                   "See More",
                   style: TextStyle(
-                      color: kPrimaryColor, fontWeight: FontWeight.w600),
+                      color: appColor, fontWeight: FontWeight.w600),
                 ),
                 Icon(
                   Icons.arrow_forward,
                   size: 12,
-                  color: kPrimaryColor,
+                  color: appColor,
                 )
               ],
             ),

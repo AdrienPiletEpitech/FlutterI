@@ -27,7 +27,7 @@ class IconBtnWithCounter extends StatelessWidget {
             width: getProportionateScreenWidth(46),
             padding: EdgeInsets.all(getProportionateScreenWidth(5)),
             decoration: BoxDecoration(
-                color: kSecondaryColor.withOpacity(0.1),
+                color: appSecondaryColor.withOpacity(0.1),
                 shape: BoxShape.circle),
             child: Icon(icon, size: getProportionateScreenWidth(28)), // TODO
           ),

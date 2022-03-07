@@ -30,7 +30,7 @@ class ProductCard extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.all(getProportionateScreenWidth(20)),
                 decoration: BoxDecoration(
-                  color: kSecondaryColor.withOpacity(0.1),
+                  color: appSecondaryColor.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Image.asset(product.images[0]),
@@ -46,7 +46,7 @@ class ProductCard extends StatelessWidget {
               style: TextStyle(
                   fontSize: getProportionateScreenWidth(18),
                   fontWeight: FontWeight.w600,
-                  color: kPrimaryColor),
+                  color: appColor),
             )
           ],
         ),

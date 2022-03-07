@@ -16,9 +16,9 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   int currentPage = 0;
   List<Map<String, String>> splashData = [
-    {"text": "Test 1", "image": "assets/images/test.png"},
-    {"text": "Test 2", "image": "assets/images/test.png"},
-    {"text": "Test 3", "image": "assets/images/test.png"}
+    {"text": "Welcome 👋", "image": "assets/images/logo.png"},
+    {"text": "E-commerce shop", "image": "assets/images/logo.png"},
+    {"text": "Welcome 👋", "image": "assets/images/logo.png"}
   ];
 
   @override
@@ -60,7 +60,7 @@ class _BodyState extends State<Body> {
                     ),
                     const Spacer(),
                     DefaultButton(
-                      text: 'Continue',
+                      text: 'Enter',
                       press: () {
                         Navigator.pushNamed(context, SignInPage.routeName);
                       },
@@ -78,12 +78,12 @@ class _BodyState extends State<Body> {
 
   AnimatedContainer buildDot({required int index}) {
     return AnimatedContainer(
-      duration: kAnimationDuration,
+      duration: animationTime,
       margin: EdgeInsets.only(right: 5),
       height: 6,
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
-          color: currentPage == index ? kPrimaryColor : Color(0xFFD8D8D8),
+          color: currentPage == index ? appColor : Color(0xFFD8D8D8),
           borderRadius: BorderRadius.circular(3)),
     );
   }

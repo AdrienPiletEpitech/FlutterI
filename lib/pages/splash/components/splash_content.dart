@@ -15,10 +15,10 @@ class SplashContent extends StatelessWidget {
     return Column(
       children: <Widget>[
         Spacer(),
-        Text("EPIFLUTTER",
+        Text("ShopStyle",
             style: TextStyle(
               fontSize: getProportionateScreenWidth(36),
-              color: kPrimaryColor,
+              color: appColor,
               fontWeight: FontWeight.bold,
             )
         ),
@@ -27,7 +27,7 @@ class SplashContent extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         Spacer(flex:2),
-        Image.asset("assets/images/test.png",
+        Image.asset("assets/images/logo.png",
           height: getProportionateScreenHeight(265),
           width: getProportionateScreenWidth(235),),
       ],

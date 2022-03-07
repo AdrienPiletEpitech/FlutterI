@@ -14,19 +14,19 @@ BottomNavigationBar buildBottomNavigationBar(index, context) {
       BottomNavigationBarItem(
           icon: Icon(Icons.home),
           label: "Home",
-          backgroundColor: kPrimaryColor),
+          backgroundColor: appColor),
       BottomNavigationBarItem(
           icon: Icon(Icons.account_circle),
           label: "Profile",
-          backgroundColor: kPrimaryColor),
+          backgroundColor: appColor),
       BottomNavigationBarItem(
           icon: Icon(Icons.shopping_cart),
           label: "Shopping cart",
-          backgroundColor: kPrimaryColor),
+          backgroundColor: appColor),
       BottomNavigationBarItem(
           icon: Icon(Icons.logout),
           label: "Log out",
-          backgroundColor: kPrimaryColor),
+          backgroundColor: appColor),
     ],
     onTap: (index) {
       switch (index) {

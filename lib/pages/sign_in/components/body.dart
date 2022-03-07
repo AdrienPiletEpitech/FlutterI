@@ -71,7 +71,7 @@ class Body extends StatelessWidget {
             "here",
             style: TextStyle(
                 fontSize: getProportionateScreenWidth(16),
-                color: kPrimaryColor,
+                color: appColor,
                 decoration: TextDecoration.underline),
           ),
         ),

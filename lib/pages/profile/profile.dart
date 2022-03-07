@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
 import '../../components/appbar.dart';
+import '../../components/bottomNavigationBar.dart';
 import '../../models/user.dart';
 import '../../widget/numbers_widget.dart';
 import '../../widget/profile_widget.dart';
@@ -37,11 +38,12 @@ class ProfilePage extends StatelessWidget {
           buildEdit(user, context),
         ],
       ),
+      bottomNavigationBar: buildBottomNavigationBar(1, context),
     );
   }
 
   Widget buildAbout(User user) => Container(
-      padding: EdgeInsets.symmetric(horizontal: 48),
+      padding: const EdgeInsets.symmetric(horizontal: 48),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

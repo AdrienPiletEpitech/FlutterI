@@ -13,8 +13,8 @@ ThemeData theme() {
 
 TextTheme textTheme() {
   return const TextTheme(
-    bodyText1: TextStyle(color: kTextColor),
-    bodyText2: TextStyle(color: kTextColor),
+    bodyText1: TextStyle(color: appTextColor),
+    bodyText2: TextStyle(color: appTextColor),
   );
 }
 
@@ -23,7 +23,7 @@ AppBarTheme appBarTheme() {
     color: Colors.white,
     elevation: 0,
     iconTheme: IconThemeData(color: Colors.black),
-    titleTextStyle: TextStyle(color: kPrimaryColor, fontSize: 20),
+    titleTextStyle: TextStyle(color: appColor, fontSize: 20),
     systemOverlayStyle: SystemUiOverlayStyle.light,
   );
 }

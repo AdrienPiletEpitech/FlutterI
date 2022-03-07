@@ -1,5 +1,4 @@
 import 'package:epitech_flutter/constant.dart';
-import 'package:epitech_flutter/pages/profile/profile.dart';
 import 'package:epitech_flutter/pages/sign_in/sign_in.dart';
 import 'package:flutter/material.dart';
 import '../../components/default_button.dart';
@@ -31,7 +30,7 @@ class _RegisterFormState extends State<RegisterForm> {
               children: [
                 Checkbox(
                   value: remember,
-                  activeColor: kPrimaryColor,
+                  activeColor: appColor,
                   onChanged: (value) {
                     setState(() {
                       remember = value!;
