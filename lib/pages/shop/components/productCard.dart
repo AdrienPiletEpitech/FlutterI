@@ -14,38 +14,28 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return GestureDetector(
+      onTap: press,
+      child: Card(
         margin: const EdgeInsets.all(10),
         shadowColor: Colors.blueGrey,
         elevation: 5,
-          child : GestureDetector(
-            onTap: press,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SizedBox(width: getProportionateScreenWidth(100), child: Image.asset(product.images[0])),
-                SizedBox(width: getProportionateScreenWidth(5)),
-                Text(
-                  product.title,
-                  style: const TextStyle(color: Colors.black),
-                  maxLines: 2,
-                ),
-                SizedBox(width: getProportionateScreenWidth(15)),
-                Text(
-                  "\$${product.price}",
-                  style: TextStyle(
-                      fontSize: getProportionateScreenWidth(18),
-                      fontWeight: FontWeight.w600,
-                      color: appColor),
-                ),
-                IconButton( icon: Icon(Icons.add_shopping_cart),
-                  onPressed: () {
-                  print("Pressed");
-                  },
-                ),
-              ],
-            ),
+        child: ListTile(
+          leading: CircleAvatar(
+            backgroundImage: AssetImage(product.images[0]), // no matter how big it is, it won't overflow
           ),
+          title: Text(product.title),
+          subtitle:  Text("\$${product.price}"),
+          trailing: IconButton(icon: Icon(
+            Icons.add_shopping_cart,
+            size: 20.0,
+            color: Colors.brown[900],
+          ),
+            onPressed: () {
+              print("added to card");
+            },),
+        ),
+      ),
     );
   }
 }
